@@ -86,7 +86,7 @@ export default function VideoThumbnail({ videoId }) {
             {/* Video frame */}
             <iframe
               className="w-[90vw] aspect-video rounded-lg shadow-xl mx-8"
-              src={`https://www.youtube.com/embed/2yfyPeAEV3A?si=yVjUwh2As26Ii4BY`}
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
