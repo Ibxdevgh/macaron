@@ -9,7 +9,7 @@ import Image from "next/image";
 import React from "react";
 import NavBar from "./components/NavBar";
 import StatsSection from "./components/Counter";
-
+import CustomVideoPlayer from "../app/components/CustomVideoPlayer";
 export default function Home() {
   return (
     <>
@@ -346,18 +346,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full max-w-4xl mx-auto px-4 my-12">
-  <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-    <iframe
-      src="https://macaron.so/video.mp4"
-      className="absolute top-0 left-0 w-full h-full"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Macaron AI Video"
-    ></iframe>
-  </div>
-</div>
+                <CustomVideoPlayer />
                 <MacaronRolling />
               </div>
               <section className="w-full pt-12 pb-0 md:py-24">
