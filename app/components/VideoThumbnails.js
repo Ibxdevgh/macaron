@@ -86,7 +86,7 @@ export default function VideoThumbnail({ videoId }) {
             {/* Video frame */}
             <iframe
   src="https://player.mux.com/jzsCr4zl5wDyQmjdg24hDWwaUeEo3AwIkG4NjPZ5IL00"
-  style="width: 100%; border: none; aspect-ratio: 16/9;"
+  style="width: 100%; border: none; aspect-ratio: 4/3;"
   allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
   allowfullscreen
 ></iframe>
