@@ -82,14 +82,17 @@ export default function VideoThumbnail({ videoId }) {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-
-            {/* Video frame */}
             <iframe
-  src="https://player.mux.com/jzsCr4zl5wDyQmjdg24hDWwaUeEo3AwIkG4NjPZ5IL00"
-  style="width: 100%; border: none; aspect-ratio: 16/9;"
-  allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-  allowfullscreen
-></iframe>
+              className="w-[90vw] aspect-video rounded-lg shadow-xl mx-8"
+              src={`https://player.mux.com/jzsCr4zl5wDyQmjdg24hDWwaUeEo3AwIkG4NjPZ5IL00`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+			
+            {/* Video frame */}
+            
           </div>
         </div>
       )}
