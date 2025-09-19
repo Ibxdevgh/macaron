@@ -48,7 +48,7 @@ export default function NavBar() {
       {/* Social Icons */}
       <div className="flex items-center gap-2">
         {/* Coming Soon Button */}
-        <button className="bg-gray-100 text-gray-600 px-3 py-1 rounded-md text-sm font-medium transition-colors hover:bg-gray-200">
+        <button className="bg-black text-white px-4 py-2 rounded-md text-base font-medium transition-colors hover:bg-gray-800 h-10">
           Coming Soon
         </button>
         
