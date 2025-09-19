@@ -48,7 +48,7 @@ export default function NavBar() {
       {/* Social Icons */}
       <div className="flex items-center gap-2">
   <Link
-    href="https://x.com/"
+    href="https://x.com/macaronagent"
     target="_blank"
     rel="noopener noreferrer"
     className="flex-shrink-0"
