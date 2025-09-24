@@ -407,7 +407,7 @@ export default function FAQSidebar() {
                     <strong>Macaron support</strong>
                     <ul>
                       <li>
-                        Email <strong>contact@macaron.im</strong> with your{" "}
+                        Email <strong>hello@macaron.so</strong> with your{" "}
                         <strong>Account ID</strong> and payment screenshot.
                       </li>
                       <li>
@@ -427,7 +427,7 @@ export default function FAQSidebar() {
             content: (
               <>
                 <p>
-                  Yes, via Apple App Store or by emailing contact@macaron.im.
+                  Yes, via Apple App Store or by emailing hello@macaron.so.
                 </p>
                 <ul>
                   <li>Unused almonds: full refund</li>
@@ -618,7 +618,7 @@ export default function FAQSidebar() {
             content: (
               <p>
                 Check spam/junk folders. If still missing, email
-                contact@macaron.im with a description of your issue.
+                hello@macaron.so with a description of your issue.
               </p>
             ),
           },
@@ -632,7 +632,7 @@ export default function FAQSidebar() {
                     or
                     <strong>Settings → Feedback</strong>
                   </li>
-                  <li>Email: contact@macaron.im</li>
+                  <li>Email: hello@macaron.so</li>
                   <li>
                     Discord: join the server and post in the help channel
                     <br />
