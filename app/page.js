@@ -274,12 +274,7 @@ export default function Home() {
                                   rel="noopener noreferrer"
                                   className="w-full inline-block"
                                 >
-                          <button className="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none bg-macaron-gradient noise-background text-white border border-white/70 shadow-[inset_0px_0px_17px_0px_rgba(255,255,255,0.25)] h-14 rounded-full px-10 text-base relative overflow-visible z-20 w-full"
-                        disabled>
-                            <span className="relative z-20">
-                              Coming soon to App Store
-                            </span>
-                          </button>
+                          <button class="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none bg-macaron-gradient noise-background text-white border border-white/70 shadow-[inset_0px_0px_17px_0px_rgba(255,255,255,0.25)] h-14 rounded-full px-10 text-base relative overflow-visible z-20 w-full"><span class="relative z-20">Get the app</span></button>
                         </Link>
                       </div>
                     </div>
