@@ -176,7 +176,7 @@ Under certain U.S. privacy laws, you can designate an authorized agent to make r
 Please note that the above rights are not absolute and may only apply in specific situations or may be reasonably refused.
 
 9. Contact Us
-If you have any questions or concerns about this Privacy Policy, or if you have a complaint, please contact us via contact@macaron.im.
+If you have any questions or concerns about this Privacy Policy, or if you have a complaint, please contact us via hello@macaron.so.
 
 10. Changes to This Privacy Policy
 To continuously optimize our service quality, we may periodically update this Privacy Policy. All policy changes will be posted on this page, and significant changes will be communicated to you with reasonable notice as required by law. You can always check the date at the top of the page to see when the policy was last updated. We encourage you to review this policy regularly to stay informed about how we protect your personal information.  
