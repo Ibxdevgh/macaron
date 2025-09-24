@@ -234,7 +234,7 @@ export default function Home() {
                     <div className="w-[290px] h-auto">
                       <div className="relative inline-flex items-center justify-center w-full group">
                         {/* Macaron Images */}
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[50]">
+                        <div className="absolute inset-0 flex items-center justify-center z-[50]">
                           {/* Upper Left */}
                           <Image
                             src="/assets/image/macaron-latte.png"
