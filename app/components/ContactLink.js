@@ -8,7 +8,7 @@ export default function ContactLink() {
   const [fadeOut, setFadeOut] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const email = "contact@macaron.im";
+  const email = "hello@macaron.so";
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(email);

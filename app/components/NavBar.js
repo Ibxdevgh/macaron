@@ -53,7 +53,7 @@ export default function NavBar() {
         </button>
         
         <Link
-          href="https:/x.com/macaronagent"
+          href="https://x.com/macaronagent"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-shrink-0"
