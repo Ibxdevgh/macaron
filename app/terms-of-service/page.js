@@ -186,7 +186,7 @@ For the aforementioned violations, we will immediately suspend or terminate rele
 4. Subscription and Refund Policy
 4.1 Subscription Management
 Certain services or specific portions thereof are only available with a paid subscription. Depending on the type of subscription plan selected at the time of purchase, you will be billed periodically (monthly) in advance. At the end of each billing cycle, your subscription will automatically renew under the exact same conditions unless cancelled by either you or us.
-You can cancel your subscription renewal by contacting us via email at contact@macaron.im or through the application itself. You will not receive a refund for fees already paid for the current subscription period, and you will continue to have access to the service until the end of your current subscription period.
+You can cancel your subscription renewal by contacting us via email at hello@macaron.so or through the application itself. You will not receive a refund for fees already paid for the current subscription period, and you will continue to have access to the service until the end of your current subscription period.
 4.2 Billing and Fee Changes
 You must provide our payment system with accurate and complete billing information, including your full name, address, state, postal code, phone number, and valid payment method details. If automatic billing fails for any reason, the company will issue an electronic invoice indicating that you must manually make full payment corresponding to the billing period indicated on the invoice by a specified due date.
 We reserve the right, at our sole discretion, to modify subscription fees at any time. Any changes to subscription fees will become effective at the end of the current subscription period. We will provide you with reasonable advance notice prior to any change in subscription fees taking effect, allowing you the opportunity to terminate your subscription before such changes become effective. Continuing to use the service after the subscription fee change is effective constitutes your agreement to pay the modified subscription fee amount.
@@ -317,7 +317,7 @@ Waiver
 Except as provided herein, the failure to exercise a right or to require performance of an obligation under these terms shall not affect a party’s ability to exercise such right or require such performance at any time thereafter, nor shall the waiver of a breach constitute a waiver of any subsequent breach.
 
 13. Contact Us
-If you have any questions about these terms and conditions, you can contact us via contact@macaron.im.  
+If you have any questions about these terms and conditions, you can contact us via hello@macaron.so.  
 `}
             </pre>
           </div>
