@@ -73,11 +73,12 @@ export default function Footer() {
             <ul className="space-y-[16px]">
               <li>
                 <a
-                  href="mailto:hello@macaron.so"
-                  className="text-[#000] font-[400] text-[12px] md:text-[16px] hover:text-[#2A2A29] transition-colors"
-                >
-                  hello@macaron.so
-                </a>
+  href="mailto:hello@macaron.so"
+  className="!text-[#000] font-[400] text-[12px] md:text-[16px] hover:text-[#2A2A29] transition-colors"
+>
+  hello@macaron.so
+</a>
+
               </li>
             </ul>
           </div>
