@@ -25,6 +25,11 @@ export default function Footer() {
               Company
             </p>
             <ul className="space-y-[16px]">
+			<li>
+                hello@macaron.so
+              </li>
+			  
+			  
               <li>
                 <Link
                   href="/blog"
