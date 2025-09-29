@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full border-none">
-      <div className="w-full pt-[60px] pb-[60px] px-4 md:px-8 lg:px-16 bg-[url('/assets/image/footer.webp')] bg-cover bg-bottom bg-no-repeat relative">
+      <div className="w-full pt-[60px] pb-[80px] md:pb-[100px] px-4 md:px-8 lg:px-16 bg-[url('/assets/image/footer.webp')] bg-cover bg-bottom bg-no-repeat relative">
         <div className="w-full flex flex-col md:flex-row gap-10">
           {/* Logo */}
           <div className="w-full md:w-[20%] flex justify-center md:justify-start items-start md:mr-[-8px]">
@@ -64,16 +64,13 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Socials */}
-          
         </div>
 
         {/* Email at bottom right */}
-        <div className="absolute bottom-4 right-4 md:right-8 lg:right-16">
+        <div className="absolute bottom-6 right-4 md:right-8 lg:right-16">
           <a 
             href="mailto:hello@macaron.so"
-            className="text-[#000] font-[400] text-[12px] md:text-[16px] hover:text-[#2A2A29] transition-colors"
+            className="text-[#000] font-[600] text-[14px] md:text-[16px] hover:text-[#2A2A29] transition-colors underline"
           >
             hello@macaron.so
           </a>
