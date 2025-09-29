@@ -233,55 +233,58 @@ export default function Home() {
                     </div>
                     <div className="w-[290px] h-auto">
 					<Link
-  href="https://apps.apple.com/us/app/macaron-ai-life-tool-maker/id6747623785"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-full inline-block"
->
-  <div className="relative inline-flex items-center justify-center w-full group">
-    {/* Macaron Images */}
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[50]">
-      {/* Upper Left */}
-      <Image
-        src="/assets/image/macaron-latte.png"
-        alt=""
-        width={30}
-        height={30}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:-translate-x-[140%] group-hover:-translate-y-[140%] group-hover:opacity-100 group-hover:rotate-[30deg] delay-0"
-      />
-      {/* Upper Right */}
-      <Image
-        src="/assets/image/macaron-mocha.png"
-        alt=""
-        width={30}
-        height={30}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-[120%] group-hover:-translate-y-[140%] group-hover:opacity-100 group-hover:rotate-[0deg] delay-75"
-      />
-      {/* Bottom Left */}
-      <Image
-        src="/assets/image/macaron-espresso.png"
-        alt=""
-        width={30}
-        height={30}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:-translate-x-[140%] group-hover:translate-y-[100%] group-hover:opacity-100 group-hover:rotate-[-25deg] delay-100"
-      />
-      {/* Bottom Right */}
-      <Image
-        src="/assets/image/macaron-coldbrew.png"
-        alt=""
-        width={30}
-        height={30}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-[110%] group-hover:translate-y-[110%] group-hover:opacity-100 group-hover:rotate-[45deg] delay-150"
-      />
-    </div>
-    
-    <button className="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none bg-macaron-gradient noise-background text-white border border-white/70 shadow-[inset_0px_0px_17px_0px_rgba(255,255,255,0.25)] h-14 rounded-full px-10 text-base relative overflow-visible z-20 w-full">
-      <span className="relative z-20">
-        Get the app on App Store
-      </span>
-    </button>
-  </div>
-</Link>
+          href="https://apps.apple.com/us/app/macaron-ai-life-tool-maker/id6747623785"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full inline-block"
+        >
+          <div className="relative inline-flex items-center justify-center w-full group">
+            {/* Macaron Images */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[50]">
+              {/* Upper Left */}
+              <Image
+                src="/assets/image/macaron-latte.png"
+                alt=""
+                width={30}
+                height={30}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:-translate-x-[140%] group-hover:-translate-y-[140%] group-hover:opacity-100 group-hover:rotate-[30deg] delay-0"
+              />
+              {/* Upper Right */}
+              <Image
+                src="/assets/image/macaron-mocha.png"
+                alt=""
+                width={30}
+                height={30}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-[120%] group-hover:-translate-y-[140%] group-hover:opacity-100 group-hover:rotate-[0deg] delay-75"
+              />
+              {/* Bottom Left */}
+              <Image
+                src="/assets/image/macaron-espresso.png"
+                alt=""
+                width={30}
+                height={30}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:-translate-x-[140%] group-hover:translate-y-[100%] group-hover:opacity-100 group-hover:rotate-[-25deg] delay-100"
+              />
+              {/* Bottom Right */}
+              <Image
+                src="/assets/image/macaron-coldbrew.png"
+                alt=""
+                width={30}
+                height={30}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-500 ease-in-out group-hover:translate-x-[110%] group-hover:translate-y-[110%] group-hover:opacity-100 group-hover:rotate-[45deg] delay-150"
+              />
+            </div>
+            
+            <button className="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none bg-blue-500 text-white border border-white/70 shadow-[inset_0px_0px_17px_0px_rgba(255,255,255,0.25)] h-14 rounded-full px-10 text-base relative overflow-visible z-20 w-full">
+              <span className="relative z-20">
+                Get the app on App Store
+              </span>
+            </button>
+          </div>
+        </Link>
+		
+		
+		
                     <div className="relative inline-flex items-center justify-center w-full group">
                         {/* Macaron Images */}
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[50]">
