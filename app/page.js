@@ -235,6 +235,12 @@ export default function Home() {
 					
                       <div className="relative inline-flex items-center justify-center w-full group">
                         {/* Macaron Images */}
+						<Link
+                                  href="https://apps.apple.com/us/app/macaron-ai-life-tool-maker/id6747623785"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="w-full inline-block"
+                                >
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[50]">
                                   {/* Upper Left */}
                                   <Image
@@ -277,12 +283,13 @@ export default function Home() {
                                     </span>
                                   </button>
                         
-								
+								</Link>
 								
 								
 								
                       </div>
                     </div>
+					
                     <div className="relative inline-flex items-center justify-center w-full group">
                         {/* Macaron Images */}
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[50]">
