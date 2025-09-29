@@ -25,10 +25,6 @@ export default function Footer() {
               Company
             </p>
             <ul className="space-y-[16px]">
-			
-			  <li>
-                hello@macaron.so
-              </li>
               <li>
                 <Link
                   href="/blog"
@@ -69,8 +65,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Socials */}
-          
+          {/* Contact */}
+          <div className="flex-1">
+            <p className="font-[600] text-[#000] mb-[18px] md:mb-[36px] text-[16px] md:text-[20px]">
+              Contact
+            </p>
+            <ul className="space-y-[16px]">
+              <li>
+                <a
+                  href="mailto:hello@macaron.so"
+                  className="text-[#000] font-[400] text-[12px] md:text-[16px] hover:text-[#2A2A29] transition-colors"
+                >
+                  hello@macaron.so
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </footer>
