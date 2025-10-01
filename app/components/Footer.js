@@ -83,8 +83,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-10 text-center">
+        {/* Copyright with separator */}
+        <div className="mt-10 pt-6 border-t border-[#ccc] text-center">
           <p className="text-[#000] text-[12px] md:text-[14px] font-[400]">
             © {new Date().getFullYear()} Macaron. All rights reserved.
           </p>
