@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full border-none">
-      <div className="w-full pt-[60px] pb-[60px] px-4 md:px-8 lg:px-16 bg-[url('/assets/image/footer.webp')] bg-cover bg-bottom bg-no-repeat">
+      <div className="w-full pt-[60px] pb-[20px] px-4 md:px-8 lg:px-16 bg-[url('/assets/image/footer.webp')] bg-cover bg-bottom bg-no-repeat">
         <div className="w-full flex flex-col md:flex-row gap-10">
           {/* Logo */}
           <div className="w-full md:w-[20%] flex justify-center md:justify-start items-start md:mr-[-8px]">
@@ -73,16 +73,21 @@ export default function Footer() {
             <ul className="space-y-[16px]">
               <li>
                 <a
-  href="mailto:hello@macaron.so"
-  className="!text-[#000] font-[400] text-[12px] md:text-[16px] hover:text-[#2A2A29] transition-colors"
->
-  hello@macaron.so
-</a>
-
+                  href="mailto:hello@macaron.so"
+                  className="!text-[#000] font-[400] text-[12px] md:text-[16px] hover:text-[#2A2A29] transition-colors"
+                >
+                  hello@macaron.so
+                </a>
               </li>
             </ul>
           </div>
+        </div>
 
+        {/* Copyright */}
+        <div className="mt-10 text-center">
+          <p className="text-[#000] text-[12px] md:text-[14px] font-[400]">
+            © {new Date().getFullYear()} Macaron. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
