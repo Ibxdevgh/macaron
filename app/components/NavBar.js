@@ -49,7 +49,7 @@ export default function NavBar() {
       <div className="flex items-center gap-2">
         {/* Coming Soon Button */}
         <button className="bg-blue-500/10 text-blue-600 border border-blue-500/20 px-4 py-2 rounded-md text-base font-medium transition-colors hover:bg-blue-500/20 h-10">
-          CA : Coming Soon.
+          CA : 8okE7HpmWX9xrjAs2WdwBAVsiyXGLcRQ5zh7VaoXpump
         </button>
         
         <Link
@@ -81,5 +81,6 @@ export default function NavBar() {
   );
 
 }
+
 
 
