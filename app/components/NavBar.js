@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function NavBar() {
   const pathname = usePathname();
   const [copied, setCopied] = useState(false);
-  const caValue = "8okE7HpmWX9xrjAs2WdwBAVsiyXGLcRQ5zh7VaoXpump";
+  const caValue = "Coming Soon";
 
   // utility to check active link
   const linkClass = (path) =>
@@ -140,3 +140,4 @@ export default function NavBar() {
     </nav>
   );
 }
+
