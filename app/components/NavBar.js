@@ -3,10 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import ContactLink from "../components/ContactLink";
+import { useState } from "react";
 
 export default function NavBar() {
   const pathname = usePathname();
+  const [copied, setCopied] = useState(false);
+  const caValue = "8okE7HpmWX9xrjAs2WdwBAVsiyXGLcRQ5zh7VaoXpump";
 
   // utility to check active link
   const linkClass = (path) =>
@@ -16,10 +18,16 @@ export default function NavBar() {
         : "text-black hover:text-gray-500"
     }`;
 
+  const handleCopyCA = () => {
+    navigator.clipboard.writeText(caValue);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <nav className="flex items-center justify-between px-[16px] md:px-[32px] h-[44px] md:h-[64px] border-b border-[#E9E7E2] w-full fixed top-0 left-0 z-50 bg-[#F9F7F1]">
       {/* Logo */}
-      <Link href="/" className="flex items-center space-x-2">
+      <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
         <Image
           src="/assets/image/logo.png"
           alt="Macaron"
@@ -29,59 +37,106 @@ export default function NavBar() {
         />
       </Link>
 
-      {/* Nav Links */}
-      <div className="hidden md:flex items-center gap-[80px]">
-        <Link href="/blog" className={linkClass("/blog")}>
-          Blog
-        </Link>
-        <Link href="/playbook" className={linkClass("/playbook")}>
-          Playbook
-        </Link>
-        <Link href="/contact" className={linkClass("/contact")}>
-          Contact Us
-        </Link>
-        <Link href="/qa" className={linkClass("/qa")}>
-          FAQ
-        </Link>
+      {/* Center Section - Announcement with CA Button */}
+      <div className="hidden md:flex items-center justify-center flex-1 mx-4">
+        <div className="flex items-center gap-3">
+          <span className="text-sm font-medium text-gray-700 whitespace-nowrap">
+            $MACARON is live on pumpfun!
+          </span>
+          <div className="flex items-center gap-1 bg-blue-500/10 text-blue-600 border border-blue-500/20 px-3 py-1.5 rounded-md text-sm font-medium transition-colors hover:bg-blue-500/20">
+            <span>CA: Coming Soon</span>
+            <button
+              onClick={handleCopyCA}
+              className="relative flex items-center justify-center ml-1 hover:bg-blue-500/20 rounded p-1 transition-colors"
+              title="Copy CA"
+            >
+              {copied ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-green-600"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+              )}
+              {copied && (
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+                  Copied!
+                </div>
+              )}
+            </button>
+          </div>
+        </div>
       </div>
 
-      {/* Social Icons */}
-      <div className="flex items-center gap-2">
-        {/* Coming Soon Button */}
-        <button className="bg-blue-500/10 text-blue-600 border border-blue-500/20 px-4 py-2 rounded-md text-base font-medium transition-colors hover:bg-blue-500/20 h-10">
-          CA : 8okE7HpmWX9xrjAs2WdwBAVsiyXGLcRQ5zh7VaoXpump
-        </button>
-        
-        <Link
-          href="https://x.com/macaroncreate"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-shrink-0"
-        >
-          <button className="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none hover:bg-gray-200 hover:text-accent-foreground rounded-md h-8 w-8 md:h-10 md:w-10">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 57 57"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="rounded-md" 
-            >
-              <rect width="57" height="57" rx="4" fill="black" />
-              <rect x="3" y="3" width="51" height="51" rx="4" fill="black" />
-              <path
-                d="M41.9434 7.0459H49.112L33.4506 24.9458L51.875 49.3036H37.4489L26.1498 34.5307L13.2211 49.3036H6.04817L22.7995 30.1576L5.125 7.0459H19.9174L30.1307 20.5489L41.9434 7.0459ZM39.4274 45.0128H43.3996L17.759 11.1113H13.4964L39.4274 45.0128Z"
-                fill="white"
-              />
-            </svg>
-          </button>
-        </Link>
+      {/* Nav Links and Social Icons Container */}
+      <div className="flex items-center gap-[80px]">
+        {/* Nav Links - Hidden on small screens */}
+        <div className="hidden md:flex items-center gap-[80px]">
+          <Link href="/blog" className={linkClass("/blog")}>
+            Blog
+          </Link>
+          <Link href="/playbook" className={linkClass("/playbook")}>
+            Playbook
+          </Link>
+          <Link href="/contact" className={linkClass("/contact")}>
+            Contact Us
+          </Link>
+          <Link href="/qa" className={linkClass("/qa")}>
+            FAQ
+          </Link>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex items-center gap-2">
+          <Link
+            href="https://x.com/macaroncreate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0"
+          >
+            <button className="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none hover:bg-gray-200 hover:text-accent-foreground rounded-md h-8 w-8 md:h-10 md:w-10">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 57 57"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="rounded-md"
+              >
+                <rect width="57" height="57" rx="4" fill="black" />
+                <rect x="3" y="3" width="51" height="51" rx="4" fill="black" />
+                <path
+                  d="M41.9434 7.0459H49.112L33.4506 24.9458L51.875 49.3036H37.4489L26.1498 34.5307L13.2211 49.3036H6.04817L22.7995 30.1576L5.125 7.0459H19.9174L30.1307 20.5489L41.9434 7.0459ZM39.4274 45.0128H43.3996L17.759 11.1113H13.4964L39.4274 45.0128Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </Link>
+        </div>
       </div>
     </nav>
   );
-
 }
-
-
-
-
