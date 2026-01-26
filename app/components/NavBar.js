@@ -37,8 +37,25 @@ export default function NavBar() {
         />
       </Link>
 
-      {/* Center Section - Announcement with CA Button */}
-      <div className="hidden md:flex items-center justify-center flex-1 mx-4">
+      {/* Combined Center Section with Links and Announcement */}
+      <div className="hidden md:flex items-center justify-center flex-1">
+        {/* Navigation Links */}
+        <div className="flex items-center gap-[80px] mr-8">
+          <Link href="/blog" className={linkClass("/blog")}>
+            Blog
+          </Link>
+          <Link href="/playbook" className={linkClass("/playbook")}>
+            Playbook
+          </Link>
+          <Link href="/contact" className={linkClass("/contact")}>
+            Contact Us
+          </Link>
+          <Link href="/qa" className={linkClass("/qa")}>
+            FAQ
+          </Link>
+        </div>
+
+        {/* Announcement with CA Button */}
         <div className="flex items-center gap-3">
           <span className="text-sm font-medium text-gray-700 whitespace-nowrap">
             $MACARON is live on pumpfun!
@@ -91,53 +108,33 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* Nav Links and Social Icons Container */}
-      <div className="flex items-center gap-[80px]">
-        {/* Nav Links - Hidden on small screens */}
-        <div className="hidden md:flex items-center gap-[80px]">
-          <Link href="/blog" className={linkClass("/blog")}>
-            Blog
-          </Link>
-          <Link href="/playbook" className={linkClass("/playbook")}>
-            Playbook
-          </Link>
-          <Link href="/contact" className={linkClass("/contact")}>
-            Contact Us
-          </Link>
-          <Link href="/qa" className={linkClass("/qa")}>
-            FAQ
-          </Link>
-        </div>
-
-        {/* Social Icons */}
-        <div className="flex items-center gap-2">
-          <Link
-            href="https://x.com/macaroncreate"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0"
-          >
-            <button className="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none hover:bg-gray-200 hover:text-accent-foreground rounded-md h-8 w-8 md:h-10 md:w-10">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 57 57"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="rounded-md"
-              >
-                <rect width="57" height="57" rx="4" fill="black" />
-                <rect x="3" y="3" width="51" height="51" rx="4" fill="black" />
-                <path
-                  d="M41.9434 7.0459H49.112L33.4506 24.9458L51.875 49.3036H37.4489L26.1498 34.5307L13.2211 49.3036H6.04817L22.7995 30.1576L5.125 7.0459H19.9174L30.1307 20.5489L41.9434 7.0459ZM39.4274 45.0128H43.3996L17.759 11.1113H13.4964L39.4274 45.0128Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </Link>
-        </div>
+      {/* Social Icons Only */}
+      <div className="flex items-center gap-2">
+        <Link
+          href="https://x.com/macaroncreate"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-shrink-0"
+        >
+          <button className="inline-flex items-center justify-center whitespace-nowrap font-medium transition-colors focus-visible:outline-none hover:bg-gray-200 hover:text-accent-foreground rounded-md h-8 w-8 md:h-10 md:w-10">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 57 57"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="rounded-md"
+            >
+              <rect width="57" height="57" rx="4" fill="black" />
+              <rect x="3" y="3" width="51" height="51" rx="4" fill="black" />
+              <path
+                d="M41.9434 7.0459H49.112L33.4506 24.9458L51.875 49.3036H37.4489L26.1498 34.5307L13.2211 49.3036H6.04817L22.7995 30.1576L5.125 7.0459H19.9174L30.1307 20.5489L41.9434 7.0459ZM39.4274 45.0128H43.3996L17.759 11.1113H13.4964L39.4274 45.0128Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </Link>
       </div>
     </nav>
   );
 }
-
